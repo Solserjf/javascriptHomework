@@ -1,6 +1,5 @@
-let x = undefined;
+let x;
 if(!x){
-    console.log('default');
-}else {
-    console.log('everything is ok');
+    x ='default';
 }
+console.log(x);
