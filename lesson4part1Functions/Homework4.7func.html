@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework4.7 | Functions</title>
+</head>
+<body>
+<script>
+    function writeText2(liText, quantity){
+        document.write(`<ul>`);
+        for (let i = 0; i < quantity; i++) {
+            const quantityElement = quantity[i];
+            document.write(`<li>${liText}</li>`);
+        }
+        document.write(`</ul>`);
+    }
+    writeText2('!!!!!', 10);
+</script>
+</body>
+</html>
+<!--#0Kxco1edSN-->
+<!-- - створити функцію яка створює ul з  елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write-->

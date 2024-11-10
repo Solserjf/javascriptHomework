@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework4.13| Functions</title>
+</head>
+<body>
+    <script>
+      function exchange(sumUAH,currencyValues,exchangeCurrency){
+          let chosenCurrency;
+          for (const Element of currencyValues) {
+              if(Element.currency === exchangeCurrency){
+                chosenCurrency = Element;
+              }
+          } return sumUAH/chosenCurrency.value;
+      }
+      console.log(exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD'));
+    </script>
+</body>
+</html>
+<!--#mkGDenYnNjn-->
+<!-- - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)-->
+<!--Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD') // => 400-->

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework4.10| Functions</title>
+</head>
+<body>
+    <script>
+        function minNumber(numbers){
+            let min = numbers[0];
+            for (const minElement of numbers) {
+                if(minElement < min){
+                    min = minElement;
+                }
+            }
+            return min;
+        }
+
+        console.log(minNumber([32,11,45,0,-9,18,6,15]));
+    </script>
+</body>
+</html>
+<!--#pghbnSB-->
+<!-- - створити функцію яка повертає найменьше число з масиву-->
