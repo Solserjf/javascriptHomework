@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework5.9| Arrow Function</title>
+</head>
+<body>
+    <script>
+      let arrObjects = (users) => {
+        for (let user of users) {
+          document.write(`<div>${user.id} ${user.name} ${user.age}</div>`);
+        }
+      }
+      let arrObjTest = [
+        one = {
+          id: '1',
+          name: 'one',
+          age: +'1'
+        },
+        two = {
+          id: '2',
+          name: 'two',
+          age: +'2'
+        },
+        three = {
+          id: '3',
+          name: 'three',
+          age: +'3'
+        }
+      ]
+      arrObjects(arrObjTest);
+    </script>
+</body>
+</html>
+<!--#bovDJDTIjt (використовувати стрілочні ф-ції)-->
+<!-- - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.-->

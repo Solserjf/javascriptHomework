@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework5.7| Arrow Functions</title>
+</head>
+<body>
+    <script>
+      let writeText2 = (liText, quantity) => {
+          document.write(`<ul>`);
+          for (let i = 0; i < quantity; i++) {
+              const quantityElement = quantity[i];
+              document.write(`<li>${liText}</li>`);
+          }
+          document.write(`</ul>`);
+      }
+      writeText2('hello!!!!!!!!!!!!!!!!!!', 20);
+    </script>
+</body>
+</html>
+<!--#0Kxco1edSN (використовувати стрілочні ф-ції)-->
+<!-- - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)-->

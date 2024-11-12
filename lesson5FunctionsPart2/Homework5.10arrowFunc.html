@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework5.10| Arrow Functions</title>
+</head>
+<body>
+    <script>
+        let minNumber = (numbers) => {
+            let min = numbers[0];
+            for (const minElement of numbers) {
+                if(minElement < min){
+                    min = minElement;
+                }
+            }
+            return min;
+        }
+        console.log(minNumber([22,13,-89,0,-9,19,6,12]));
+    </script>
+</body>
+</html>

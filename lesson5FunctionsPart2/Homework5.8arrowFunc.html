@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+    <script>
+      let arrayElementary = (arr) => {
+          document.write(`<ul>`);
+          for (let i = 0; i < arr.length; i++) {
+              const arrElement = arr[i];
+              document.write(`<li>${arrElement}</li>`);
+          }
+          document.write(`</ul>`);
+      }
+      arrayElementary([1,9,8,0,'hi', true,]);
+    </script>
+</body>
+</html>
+<!--#gEFoxMMO (використовувати стрілочні ф-ції)-->
+<!-- - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список-->
