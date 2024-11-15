@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework6.10| Array Functions</title>
+</head>
+<body>
+    <script>
+        const cardSuits = ['spade', 'diamond','heart', 'club'];
+        const cardValues = ['6', '7', '8', '9', '10', 'jack','queen','king','ace'];
+        const packOfCards = [];
+        for (const suit of cardSuits) {
+            for (const value of cardValues) {
+                const card = {cardSuit: suit,  cardValue: value};
+                if(card.cardSuit === 'heart' || card.cardSuit === 'diamond'){
+                    card.color = 'red';
+                } else {card.color = 'black';}
+                packOfCards.push(card);
+            }
+        }
+
+        const reducedPackOfCards = packOfCards.reduce((acc, card) => {
+            if(card.cardSuit === 'spade'){
+                acc.spades.push(card);
+            }else if(card.cardSuit === 'diamond'){
+                acc.diamonds.push(card);
+            }else if(card.cardSuit === 'heart'){
+                acc.hearts.push(card);
+            }else {
+                acc.clubs.push(card);
+            } return acc;
+        }, {spades: [], diamonds: [], hearts: [], clubs: []});
+        console.log(reducedPackOfCards);
+    </script>
+</body>
+</html>
+<!--#EP5I1UUzAX-->
+<!--Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт-->
+<!--{-->
+<!--spades:[],-->
+<!--diamonds:[],-->
+<!--hearts:[],-->
+<!--clubs:[]-->
+<!--}-->

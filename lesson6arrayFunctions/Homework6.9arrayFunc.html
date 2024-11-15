@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework6.9 |Array Functions</title>
+</head>
+<body>
+    <script>
+            const cardSuits = ['spade', 'diamond','heart', 'club'];
+            const cardValues = ['6', '7', '8', '9', '10', 'jack','queen','king','ace'];
+            const packOfCards = [];
+            for (const suit of cardSuits) {
+                for (const value of cardValues) {
+                    const card = {cardSuit: suit,  cardValue: value};
+                    if(card.cardSuit === 'heart' || card.cardSuit === 'diamond'){
+                        card.color = 'red';
+                    } else {card.color = 'black';}
+                    packOfCards.push(card);
+                }
+            }
+            console.log(packOfCards);/*описати колоду карт (від 6 до туза без джокерів)*/
+            console.log(packOfCards.filter(card => card.cardValue === 'ace' && card.cardSuit === 'spade'));/*знайти піковий туз*/
+            console.log(packOfCards.filter(card => card.cardValue === '6'));/*знайти всі шістки*/
+            console.log(packOfCards.filter(card => card.color === 'red'));/*знайти всі червоні карти*/
+            console.log(packOfCards.filter(card => card.cardSuit === 'diamond'));/*знайти всі буби*/
+            console.log(packOfCards.filter(card => card.cardSuit === 'club' && card.cardValue !== '6' && card.cardValue !== '7' && card.cardValue !== '8'));/*всі трефи від 9 та більше*/
+    </script>
+
+</body>
+</html>
+<!--#bolvdlhP-->
+<!--описати колоду карт (від 6 до туза без джокерів)-->
+<!-- - знайти піковий туз-->
+<!-- - всі шістки-->
+<!-- - всі червоні карти-->
+<!-- - всі буби-->
+<!-- - всі трефи від 9 та більше-->
+<!--{-->
+<!--cardSuit: '', // 'spade', 'diamond','heart', 'clubs'-->
+<!--value: '', // '6'-'10', 'ace','jack','queen','king'-->
+<!--color:'', // 'red','black'-->
+<!--}-->
